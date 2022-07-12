@@ -1,0 +1,44 @@
+$color-dark: #262626;
+$color-black: #000;
+$color-white: #fff;
+$color-primary: #d3ab55;
+$color-secondary: #bbb;
+
+$font-greatVibes: 'Great Vibes', cursive;
+$font-josefinSans: 'Josefin Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+
+@mixin flexLayout($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin textStyles {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+@mixin centering($top) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%fullSpace {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-dark;
+}
